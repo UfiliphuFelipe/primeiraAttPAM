@@ -1,14 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-const CardCidade = ({nome, uf }) => {
+const CardCidade =  ({ nome, uf }) => {
     return (
-      <View style={styles.card}>
-        <Text style={styles.cidade}>{nome}</Text>
-        <Text> - </Text>
-        <Text style={styles.uf}>{uf}</Text>
-      </View>
+        <View style={styles.card}>
+            <Text style={styles.cidade}>{nome}</Text>
+            <Text> - </Text>
+            <Text style={styles.uf}>{uf}</Text>
+
+        </View>
     );
 };
+
 
 export default CardCidade;
 
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         backgroundColor: '#f1f1f1',
-        BorderBottomStyle: 'solid',
+        borderBottomStyle: "solid",
         borderBottomWidth: 0.3,
         borderBottomColor: '#018080'
     },
@@ -33,5 +35,6 @@ const styles = StyleSheet.create({
         color: '#0206ff',
         fontWeight: '900'
     }
+
 
 });
